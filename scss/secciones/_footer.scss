@@ -1,0 +1,13 @@
+.foot {
+    width: 100%;
+    max-height: 6vh;
+    min-height: 4vh;
+    margin: 0 auto;
+    padding: 20px;
+    position: fixed ;
+    background-color: $colorFooter;
+    bottom: 0;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 2;
+}

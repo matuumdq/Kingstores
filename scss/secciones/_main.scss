@@ -1,0 +1,47 @@
+body {
+    background-color: $colorBg;
+}
+
+.carousel {
+    width: 800px; 
+    height: 300px;
+    margin: 50px auto;
+}
+
+.botonCompra {
+    text-align: center;
+    margin: 20px;
+    .btn {
+    @extend %estiloBotones;
+    }
+}
+
+.inicio{
+    color: white;
+    text-align: center;
+    font-family: $League;
+}
+
+.experiencia{
+    font-size: 20px;
+    color: $textoPrimario;
+    text-align: center;
+}
+
+.historia {
+    @extend %parrafos;
+    &__h1{
+        font-family: $Roboto;
+        font-size: 70px;
+    }
+    &__p {
+        @include estiloBoton(#B09B71, #FF7396);
+    }
+}
+
+.contactanos {
+    max-width: 600px;
+    text-align: center;
+    margin: 40px auto;
+    @include estiloBoton(#4C3A51, #B25068)
+}
