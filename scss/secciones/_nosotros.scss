@@ -1,0 +1,13 @@
+.historia {
+    &__h1{
+        @extend %parrafos;
+        font-family: $Roboto;
+        font-size: 70px;
+    }
+    &__p {
+        @extend %parrafos;
+        font-family: $Roboto;
+        max-width: 1000px;
+        background-color: $colorFooter;
+    }
+}

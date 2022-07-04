@@ -1,0 +1,21 @@
+.fondo{
+    height: 80vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(35,41,70,1) 0%, rgba(81,85,126,1) 100%);
+}
+
+.formulario {
+    background-color: $colorFooter;
+    max-width: 700px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 15px 0px;
+    border-color: $colorFooter;
+}
+
+.contactanos {
+    max-width: 600px;
+    text-align: center;
+    margin: 40px auto;
+    color: $textoPrimario;
+}

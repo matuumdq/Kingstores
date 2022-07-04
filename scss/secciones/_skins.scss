@@ -1,0 +1,32 @@
+.textoInicio{
+    @extend %parrafos;     
+    max-width: 1000px;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+
+.card{
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(81,85,126,1) 0%, rgba(184,193,236,1) 100%);
+    &:hover{
+        background: $textoPrimario;
+        transition: 0.5s;
+    }
+}
+
+.botonComprar {
+    text-align: center;
+    margin: 20px;
+    .btn {
+    @extend %estiloBotonesChico;
+    }
+}

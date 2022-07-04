@@ -16,20 +16,37 @@
     }
 }
 
+%estiloBotonesChico{
+    height: 50px;
+    width: 150px;
+    margin: 5px;
+    background-color:$colorBoton ;
+    border-color: $colorBg;
+    a{
+        font-weight: bold;
+        text-decoration: none;
+        color: $colorBg;
+    }
+    &:hover{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}
+
 %parrafos {
-text-align: center;
-color: white;
-font-family: $League;
-font-style: italic;
-font-size: 40px;
-max-width: 700px;
-margin: 80px auto;
-padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: $League;
+    font-style: italic;
+    font-size: 40px;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
 }
 
 @mixin estiloBoton($colorBoton, $textoParrafos){
-background-color: $colorBoton;
-color: $textoParrafos;
-transform: rotate(360deg);
-transition: 1s;
+    background-color: $colorBoton;
+    color: $textoParrafos;
+    transform: rotate(360deg);
+    transition: 1s;
 }

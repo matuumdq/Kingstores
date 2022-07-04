@@ -16,6 +16,14 @@ body {
     }
 }
 
+.textoImagen {
+    position: absolute;
+    color: $textoParrafos;
+    font-family: $Roboto;
+    margin: 30% 10px 10px 70%;
+    font-size: 30px;
+}
+
 .inicio{
     color: white;
     text-align: center;
@@ -26,22 +34,4 @@ body {
     font-size: 20px;
     color: $textoPrimario;
     text-align: center;
-}
-
-.historia {
-    @extend %parrafos;
-    &__h1{
-        font-family: $Roboto;
-        font-size: 70px;
-    }
-    &__p {
-        @include estiloBoton(#B09B71, #FF7396);
-    }
-}
-
-.contactanos {
-    max-width: 600px;
-    text-align: center;
-    margin: 40px auto;
-    @include estiloBoton(#4C3A51, #B25068)
 }
