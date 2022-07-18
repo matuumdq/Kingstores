@@ -1,8 +1,20 @@
 @media (max-width: 1024px) {
-
-    .textoImagen {
-        font-size: 20px;
-        color: $colorBg;
+    .top{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .empezarCompra {
+            position: static;
+        }
+        .textoImagen {
+            position: static;
+        }
+    }
+    
+    .containerJuegos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     }
 
     .catalogo {
@@ -11,11 +23,22 @@
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         }
+
+    .containerNosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
     .formulario{
         max-width: 400px;
+    }
+
+    .carousel {
+        max-width: 200px;
     }
     .catalogo {
         grid-template-columns: repeat(1, 1fr);

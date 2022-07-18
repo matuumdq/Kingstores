@@ -11,3 +11,42 @@
         background-color: $colorFooter;
     }
 }
+
+.containerNosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    .emp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: $colorFooter;
+        margin: 5%;
+        border: 1px solid black;
+        border-radius: 0px 15px;
+        color: $textoParrafos;
+        h4{
+            padding: 20px;
+        }
+    }
+}
+
+.sponsor{
+    @extend %parrafos;
+}
+
+.carouselCliente {
+    margin: auto;
+    background-color: $colorBg;
+    color: $textoPrimario;
+    border-radius: 10px;
+    opacity: 90%;
+    align-items: center;
+    max-width: 80%;
+    .containerCliente {
+        text-align: center;
+        padding: 3% 15%;
+    }
+}

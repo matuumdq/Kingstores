@@ -4,36 +4,36 @@
   margin: 0;
   padding: 0; }
 
-.top .empezarCompra, .botonCompra .btn {
+.top .empezarCompra, .encontranos .contactoBtn {
   height: 50px;
   width: 300px;
   margin: 20px;
   font-size: large;
   background-color: #EEBBC3;
   border-color: #232946; }
-  .top .empezarCompra a, .botonCompra .btn a {
+  .top .empezarCompra a, .encontranos .contactoBtn a {
     font-weight: bold;
     text-decoration: none;
     color: #232946; }
-  .top .empezarCompra:hover, .botonCompra .btn:hover {
+  .top .empezarCompra:hover, .encontranos .contactoBtn:hover {
     transform: scale(1.1);
     transition: 1s; }
 
-.botonComprar .btn {
+.containerJuegos .card2 .infoCard .btn, .botonComprar .btn {
   height: 50px;
   width: 150px;
   margin: 5px auto 30px;
   background-color: #EEBBC3;
   border-color: #232946; }
-  .botonComprar .btn a {
+  .containerJuegos .card2 .infoCard .btn a, .botonComprar .btn a {
     font-weight: bold;
     text-decoration: none;
     color: #232946; }
-  .botonComprar .btn:hover {
+  .containerJuegos .card2 .infoCard .btn:hover, .botonComprar .btn:hover {
     transform: scale(1.1);
     transition: 1s; }
 
-.textoInicio, .historia__h1, .historia__p {
+h1, .encontranos h3, .textoInicio, .historia__h1, .historia__p, .sponsor {
   text-align: center;
   color: white;
   font-family: "League Gothic", sans-serif;
@@ -43,11 +43,20 @@
   margin: 80px auto;
   padding: 20px; }
 
+.inicio {
+  color: white;
+  text-align: center;
+  font-family: "League Gothic", sans-serif;
+  margin: auto; }
+
+.experiencia {
+  font-size: 20px;
+  color: #B8c1ec;
+  text-align: center; }
+
 .top {
   height: 100%;
   max-width: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   position: relative; }
   .top .fondo {
@@ -60,42 +69,56 @@
   .top .empezarCompra:hover {
     transform: scale(1.1);
     transition: 0.5s; }
+  .top .textoImagen {
+    position: absolute;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    top: 100px;
+    left: 70vw;
+    font-size: 30px;
+    z-index: 1; }
 
 body {
   background-color: #232946; }
 
-.carousel {
-  width: 800px;
-  height: 300px;
-  margin: 50px auto; }
+h1 {
+  font-family: "Roboto", sans-serif; }
 
-.botonCompra {
-  text-align: center;
-  margin: 20px; }
-
-.textoImagen {
-  position: absolute;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  margin: 30% 10px 10px 70%;
-  font-size: 30px; }
-
-.inicio {
-  color: white;
-  text-align: center;
-  font-family: "League Gothic", sans-serif; }
-
-.experiencia {
-  font-size: 20px;
-  color: #B8c1ec;
+.encontranos {
   text-align: center; }
+  .encontranos h3 {
+    font-family: "Roboto", sans-serif;
+    margin: auto; }
+  .encontranos .contactoBtn {
+    font-weight: bold; }
+
+.containerJuegos {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center; }
+  .containerJuegos .card2 {
+    margin: 50px;
+    width: 300px;
+    background: white;
+    border: 1px solid black; }
+    .containerJuegos .card2:hover {
+      background: #B8c1ec;
+      transition: 0.5s; }
+    .containerJuegos .card2 .infoCard p {
+      text-align: center; }
+    .containerJuegos .card2 .infoCard h4, .containerJuegos .card2 .infoCard .precio {
+      font-weight: bold;
+      font-size: 1.5rem; }
+    .containerJuegos .card2 .infoCard .btn {
+      margin: auto auto 20px 70px; }
 
 .foot {
   width: 100%;
   height: 5vh;
-  margin: 50px auto 0px;
+  margin: auto;
   padding: 20px;
-  position: fixed;
   background-color: #51557E;
   bottom: 0px;
   text-align: center;
@@ -135,8 +158,38 @@ body {
   max-width: 1000px;
   background-color: #51557E; }
 
+.containerNosotros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center; }
+  .containerNosotros .emp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #51557E;
+    margin: 5%;
+    border: 1px solid black;
+    border-radius: 0px 15px;
+    color: white; }
+    .containerNosotros .emp h4 {
+      padding: 20px; }
+
+.carouselCliente {
+  margin: auto;
+  background-color: #232946;
+  color: #B8c1ec;
+  border-radius: 10px;
+  opacity: 90%;
+  align-items: center;
+  max-width: 80%; }
+  .carouselCliente .containerCliente {
+    text-align: center;
+    padding: 3% 15%; }
+
 .fondo {
-  height: 95vh;
+  min-height: 95vh;
   background: #020024;
   background: linear-gradient(180deg, #020024 0%, #232946 0%, #51557e 100%); }
 
@@ -155,16 +208,34 @@ body {
   color: #B8c1ec; }
 
 @media (max-width: 1024px) {
-  .textoImagen {
-    font-size: 20px;
-    color: #232946; }
+  .top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .top .empezarCompra {
+      position: static; }
+    .top .textoImagen {
+      position: static; }
+  .containerJuegos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
   .catalogo {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
-    grid-row-gap: 20px; } }
+    grid-row-gap: 20px; }
+  .containerNosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; } }
 
 @media (max-width: 768px) {
+  .formulario {
+    max-width: 400px; }
+  .carousel {
+    max-width: 200px; }
   .catalogo {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 20px;

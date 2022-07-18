@@ -2,36 +2,54 @@ body {
     background-color: $colorBg;
 }
 
-.carousel {
-    width: 800px; 
-    height: 300px;
-    margin: 50px auto;
+h1{
+    @extend %parrafos;
+    font-family: $Roboto;
 }
 
-.botonCompra {
+.encontranos{
     text-align: center;
-    margin: 20px;
-    .btn {
-    @extend %estiloBotones;
+    h3{
+        @extend %parrafos;
+        font-family: $Roboto;
+        margin: auto;
+    }
+    .contactoBtn {
+        @extend %estiloBotones;
+        font-weight: bold;
     }
 }
 
-.textoImagen {
-    position: absolute;
-    color: $textoParrafos;
-    font-family: $Roboto;
-    margin: 30% 10px 10px 70%;
-    font-size: 30px;
+
+.containerJuegos{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    .card2 {
+        margin: 50px;
+        width: 300px;
+        background: white;
+        border: 1px solid black;
+        &:hover{
+            background: $textoPrimario;
+            transition: 0.5s;
+        }
+        .infoCard{
+        p {
+            text-align: center;
+        }
+        h4, .precio{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .btn {
+            @extend %estiloBotonesChico;
+            margin: auto auto 20px 70px ;
+            }
+        }
+    }
 }
 
-.inicio{
-    color: white;
-    text-align: center;
-    font-family: $League;
-}
 
-.experiencia{
-    font-size: 20px;
-    color: $textoPrimario;
-    text-align: center;
-}

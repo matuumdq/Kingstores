@@ -1,8 +1,19 @@
+.inicio{
+    color: white;
+    text-align: center;
+    font-family: $League;
+    margin: auto;
+}
+
+.experiencia{
+    font-size: 20px;
+    color: $textoPrimario;
+    text-align: center;
+}
+
 .top{
     height: 100%;
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     position: relative;
     .fondo {
@@ -19,5 +30,13 @@
         transform: scale(1.1);
         transition: 0.5s;
     } 
-    
+    .textoImagen {
+        position: absolute;
+        color: $textoParrafos;
+        font-family: $Roboto;
+        top: 100px;
+        left: 70vw;
+        font-size: 30px;
+        z-index: 1;
+    }
 }
