@@ -206,6 +206,9 @@ h1 {
   margin: auto;
   border: 1px solid black;
   border-radius: 15px 0px; }
+  .formulario h2, .formulario p, .formulario span {
+    font-weight: bold;
+    color: #B8c1ec; }
   .formulario .contFlex {
     display: flex;
     flex-direction: column; }
