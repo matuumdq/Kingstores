@@ -193,19 +193,46 @@ h1 {
   background: #020024;
   background: linear-gradient(180deg, #020024 0%, #232946 0%, #51557e 100%); }
 
-.formulario {
-  background-color: #51557E;
-  max-width: 700px;
-  padding: 30px;
-  margin: auto;
-  border-radius: 15px 0px;
-  border-color: #51557E; }
-
 .contactanos {
   max-width: 600px;
   text-align: center;
   margin: 40px auto;
   color: #B8c1ec; }
+
+.formulario {
+  background-color: #51557E;
+  max-width: 700px;
+  padding: 30px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 15px 0px; }
+  .formulario .contFlex {
+    display: flex;
+    flex-direction: column; }
+  .formulario .contFlex input {
+    text-align: center;
+    margin: 5px; }
+  .formulario .envio:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: #B8c1ec;
+    font-weight: bold; }
+
+.contFlex {
+  display: flex;
+  flex-direction: column; }
+
+.contFlex input {
+  text-align: center;
+  margin: 5px; }
+
+.envio:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  border-radius: 10px;
+  background-color: #5F7161;
+  color: white; }
 
 @media (max-width: 1024px) {
   .top {

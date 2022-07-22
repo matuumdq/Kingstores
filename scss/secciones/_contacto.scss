@@ -4,18 +4,61 @@
     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(35,41,70,1) 0%, rgba(81,85,126,1) 100%);
 }
 
-.formulario {
-    background-color: $colorFooter;
-    max-width: 700px;
-    padding: 30px;
-    margin: auto;
-    border-radius: 15px 0px;
-    border-color: $colorFooter;
-}
-
 .contactanos {
     max-width: 600px;
     text-align: center;
     margin: 40px auto;
     color: $textoPrimario;
+}
+
+.formulario {
+    background-color: $colorFooter;
+    max-width: 700px;
+    padding: 30px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 15px 0px;
+    .contFlex {
+        display: flex;
+        flex-direction: column;
+    }
+    .contFlex input {
+        text-align: center;
+        margin: 5px;
+    }
+    .envio:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        border-radius: 10px;
+        background-color: $textoPrimario;
+        font-weight: bold;
+    }
+}
+
+// .formulario {
+//     max-width: 100%;
+//     padding: 30px;
+//     background-color: #6D8B74;
+//     overflow: hidden;
+//     border: solid 3px #A2B38B;
+//     color: #D0C9C0;
+//     margin: 5%;
+// }
+
+.contFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.contFlex input {
+    text-align: center;
+    margin: 5px;
+}
+
+.envio:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: #5F7161;
+    color: white;
 }
