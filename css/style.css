@@ -219,21 +219,6 @@ h1 {
     background-color: #B8c1ec;
     font-weight: bold; }
 
-.contFlex {
-  display: flex;
-  flex-direction: column; }
-
-.contFlex input {
-  text-align: center;
-  margin: 5px; }
-
-.envio:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-  border-radius: 10px;
-  background-color: #5F7161;
-  color: white; }
-
 @media (max-width: 1024px) {
   .top {
     display: flex;

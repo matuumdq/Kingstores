@@ -34,31 +34,3 @@
         font-weight: bold;
     }
 }
-
-// .formulario {
-//     max-width: 100%;
-//     padding: 30px;
-//     background-color: #6D8B74;
-//     overflow: hidden;
-//     border: solid 3px #A2B38B;
-//     color: #D0C9C0;
-//     margin: 5%;
-// }
-
-.contFlex {
-    display: flex;
-    flex-direction: column;
-}
-
-.contFlex input {
-    text-align: center;
-    margin: 5px;
-}
-
-.envio:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    border-radius: 10px;
-    background-color: #5F7161;
-    color: white;
-}
